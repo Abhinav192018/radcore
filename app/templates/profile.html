@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+
+{% block title %}My Account - RADCORE{% endblock %}
+
+{% block content %}
+
+<section class="px-4 md:px-8 py-8">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="grid lg:grid-cols-3 gap-6">
+
+            <!-- Profile Card -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden h-fit">
+
+                <!-- Header -->
+                <div class="bg-gradient-to-br from-red-600 via-red-500 to-red-700 p-8 text-center text-white">
+
+                    <div
+                        class="h-28 w-28 rounded-full bg-white/20 backdrop-blur mx-auto flex items-center justify-center border-4 border-white/20">
+
+                        <i class="fa-solid fa-user text-5xl"></i>
+
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-black">
+                        Abhinav M
+                    </h2>
+
+                    <p class="mt-2 text-white/80 text-sm break-all">
+                        Abhinavabhi192018@gmail.com
+                    </p>
+
+                </div>
+
+                <!-- Menu -->
+                <div class="p-5 space-y-3">
+
+                    <a href="{% url 'index' %}"
+                        class="flex items-center justify-between p-4 rounded-2xl border border-gray-100 hover:border-red-200 hover:bg-red-50 transition">
+
+                        <div class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-house text-red-600"></i>
+
+                            <span class="font-medium">
+                                Home
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+                    </a>
+
+                    <a href="{% url 'products' %}"
+                        class="flex items-center justify-between p-4 rounded-2xl border border-gray-100 hover:border-red-200 hover:bg-red-50 transition">
+
+                        <div class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-bag-shopping text-red-600"></i>
+
+                            <span class="font-medium">
+                                Products
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+                    </a>
+
+                    <a href="#"
+                        class="flex items-center justify-between p-4 rounded-2xl border border-gray-100 hover:border-red-200 hover:bg-red-50 transition">
+
+                        <div class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-box text-red-600"></i>
+
+                            <span class="font-medium">
+                                My Orders
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+                    </a>
+
+
+
+
+
+
+
+                    <a href="#"
+                        class="flex items-center justify-between p-4 rounded-2xl bg-red-600 hover:bg-red-700 text-white transition">
+
+                        <div class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            <span class="font-medium">
+                                Logout
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+
+                <!-- Hero Card -->
+                <div
+                    class="bg-gradient-to-br from-slate-900 via-slate-800 to-black rounded-3xl p-8 md:p-12 text-white overflow-hidden relative">
+
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
+
+                    <div class="relative z-10">
+
+                        <span
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/20 text-red-300 text-sm font-semibold">
+
+                            <i class="fa-solid fa-shield-heart"></i>
+
+                            RADCORE MEMBER
+
+                        </span>
+
+                        <h1 class="mt-5 text-4xl md:text-6xl font-black">
+
+                            Welcome Back,
+                            <span class="text-red-500">
+                                Abhinav
+                            </span>
+
+                        </h1>
+
+                        <p class="mt-4 text-gray-300 text-lg max-w-xl">
+
+                            Manage your account, track orders, update addresses and access all your RADCORE purchases
+                            from one place.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Access -->
+                <div class="grid md:grid-cols-2 gap-5 mt-6">
+
+                    <a href="#"
+                        class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+                        <i class="fa-solid fa-box text-3xl text-red-600"></i>
+
+                        <h3 class="mt-4 text-xl font-bold">
+                            Orders
+                        </h3>
+
+                        <p class="mt-2 text-gray-500">
+                            View and track all your orders.
+                        </p>
+
+                    </a>
+
+                    <a href="#"
+                        class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+                        <i class="fa-solid fa-location-dot text-3xl text-red-600"></i>
+
+                        <h3 class="mt-4 text-xl font-bold">
+                            Addresses
+                        </h3>
+
+                        <p class="mt-2 text-gray-500">
+                            Manage your delivery locations.
+                        </p>
+
+                    </a>
+
+                    <a href="#"
+                        class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+                        <i class="fa-solid fa-heart text-3xl text-red-600"></i>
+
+                        <h3 class="mt-4 text-xl font-bold">
+                            Wishlist
+                        </h3>
+
+                        <p class="mt-2 text-gray-500">
+                            Products saved for later.
+                        </p>
+
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
