@@ -12,6 +12,8 @@ urlpatterns = [
     path('product/details/', views.product_detail, name='product_detail'),
     path('checkout/', views.checkout, name='checkout'),
     path('orders/', views.orders, name='orders'),
+    path('privacy-policy/', views.privacy_policy, name='privacy_policy'),
+    path('terms/', views.terms_and_conditions, name='terms_and_conditions'),
   
     
 ]

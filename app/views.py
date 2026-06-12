@@ -18,3 +18,9 @@ def checkout(request):
 
 def profile(request):
     return render(request, 'profile.html')
+
+def privacy_policy(request):
+    return render(request, 'privacy_policy.html')
+
+def terms_and_conditions(request):
+    return render(request, 'terms_and_conditions.html')
