@@ -1,12 +1,13 @@
-<nav class="hidden md:flex items-center justify-between px-8 py-5 bg-red-500/80 backdrop-blur-sm sticky top-0 z-50">
+{% load static %}
+<nav class="hidden md:flex items-center justify-between px-8 py-8 bg-[#007586] backdrop-blur-sm sticky top-0 z-50">
 
     <!-- Left Menu -->
     <div class="flex items-center gap-8">
-        <a href="{% url 'index' %}" class="font-medium text-white hover:text-gray-800 transition uppercase">
+        <a href="{% url 'index' %}" class="font-medium text-white hover:text-gray-200 transition uppercase">
             Home
         </a>
 
-        <a href="{% url 'products' %}" class="font-medium text-white hover:text-gray-800 transition uppercase">
+        <a href="{% url 'products' %}" class="font-medium text-white hover:text-gray-200 transition uppercase">
             Shop
         </a>
     </div>
@@ -14,19 +15,17 @@
     <!-- Center Logo -->
     <div class="absolute left-1/2 -translate-x-1/2">
         <a href="{% url 'index' %}">
-            <h1 class="text-3xl font-black tracking-widest">
-                RADCORE
-            </h1>
+            <img src="{% static 'logo/logo.png' %}" alt="RADCORE Logo" class="h-20 w-auto">
         </a>
     </div>
 
     <!-- Right Menu -->
     <div class="flex items-center gap-8">
 
-        <a href="{% url 'orders' %}" class="font-medium text-white hover:text-gray-800 transition uppercase">
+        <a href="{% url 'orders' %}" class="font-medium text-white hover:text-gray-200 transition uppercase">
             Orders
         </a>
-        <a href="{% url 'profile' %}" class="font-medium text-white hover:text-gray-800 transition">
+        <a href="{% url 'profile' %}" class="font-medium text-white hover:text-gray-200 transition">
             <i class="fa-solid fa-user text-xl"></i>
         </a>
     </div>
@@ -35,14 +34,12 @@
 
 
 <!-- Mobile Top Bar -->
-<div class="md:hidden sticky top-0 z-50 bg-red-500/80 backdrop-blur-sm border-b">
+<div class="md:hidden sticky top-0 z-50 bg-[#007586] backdrop-blur-sm border-b">
 
-    <div class="flex justify-center items-center h-16">
+    <div class="flex justify-center items-center h-20">
 
         <a href="{% url 'index' %}">
-            <h1 class="text-2xl font-black tracking-widest">
-                RADCORE
-            </h1>
+            <img src="{% static 'logo/logo.png' %}" alt="RADCORE Logo" class="h-20 w-auto">
         </a>
 
     </div>
@@ -55,7 +52,7 @@
 <div class="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-md">
 
     <div
-        class="bg-red-500/90 backdrop-blur-md shadow-2xl rounded-3xl px-4 py-3 flex items-center justify-between text-white">
+        class="bg-[#007586]/90 backdrop-blur-md shadow-2xl rounded-3xl px-4 py-3 flex items-center justify-between text-white">
 
         <a href="{% url 'index' %}" class="flex flex-col items-center gap-1 text-xs font-medium">
 
