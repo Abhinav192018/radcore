@@ -81,6 +81,25 @@
 
                     </div>
 
+                    <div class="mt-8">
+                        <div
+                            class="flex items-center justify-between rounded-3xl border border-cyan-500 bg-cyan-50 p-4 shadow-sm">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500">Quantity</p>
+                                <p class="text-xs text-gray-400">Update Quantity</p>
+                            </div>
+                            <div
+                                class="inline-flex items-center overflow-hidden rounded-full border border-gray-200 bg-white shadow-sm p-4">
+                                <button id="decreaseQty" type="button"
+                                    class="h-12 w-12 bg-white text-2xl text-gray-700 transition hover:bg-gray-100 focus:outline-none">-</button>
+                                <span id="quantityValue"
+                                    class="h-12 w-16 flex items-center justify-center bg-white text-lg font-bold text-gray-800">1</span>
+                                <button id="increaseQty" type="button"
+                                    class="h-12 w-12 bg-white text-2xl text-gray-700 transition hover:bg-gray-100 focus:outline-none">+</button>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="mt-8 flex items-center gap-4">
 
                         <div>
@@ -182,6 +201,22 @@
 
             this.classList.add('border-cyan-500');
         });
+    });
+
+    const quantityValue = document.getElementById('quantityValue');
+    const decreaseQty = document.getElementById('decreaseQty');
+    const increaseQty = document.getElementById('increaseQty');
+
+    decreaseQty.addEventListener('click', () => {
+        let currentQty = parseInt(quantityValue.textContent, 10);
+        if (currentQty > 1) {
+            quantityValue.textContent = currentQty - 1;
+        }
+    });
+
+    increaseQty.addEventListener('click', () => {
+        let currentQty = parseInt(quantityValue.textContent, 10);
+        quantityValue.textContent = currentQty + 1;
     });
 </script>
 
