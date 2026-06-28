@@ -1,13 +1,13 @@
 {% load static %}
-<nav class="hidden md:flex items-center justify-between px-8 py-8 bg-[#007586] backdrop-blur-sm sticky top-0 z-50">
+<nav class="hidden md:flex items-center justify-between px-8 py-8 bg-white backdrop-blur-md sticky top-0 z-50">
 
     <!-- Left Menu -->
     <div class="flex items-center gap-8">
-        <a href="{% url 'index' %}" class="font-medium text-white hover:text-gray-200 transition uppercase">
+        <a href="{% url 'index' %}" class="font-medium text-black hover:text-gray-600 transition uppercase">
             Home
         </a>
 
-        <a href="{% url 'products' %}" class="font-medium text-white hover:text-gray-200 transition uppercase">
+        <a href="{% url 'products' %}" class="font-medium text-black hover:text-gray-600 transition uppercase">
             Shop
         </a>
     </div>
@@ -22,10 +22,10 @@
     <!-- Right Menu -->
     <div class="flex items-center gap-8">
 
-        <a href="{% url 'orders' %}" class="font-medium text-white hover:text-gray-200 transition uppercase">
+        <a href="{% url 'orders' %}" class="font-medium text-black hover:text-gray-600 transition uppercase">
             Orders
         </a>
-        <a href="{% url 'profile' %}" class="font-medium text-white hover:text-gray-200 transition">
+        <a href="{% url 'profile' %}" class="font-medium text-black hover:text-gray-600 transition ">
             <i class="fa-solid fa-user text-xl"></i>
         </a>
     </div>
@@ -34,7 +34,7 @@
 
 
 <!-- Mobile Top Bar -->
-<div class="md:hidden sticky top-0 z-50 bg-[#007586] backdrop-blur-sm border-b">
+<div class="md:hidden sticky top-0 z-50 bg-white backdrop-blur-md">
 
     <div class="flex justify-center items-center h-20">
 
@@ -52,7 +52,7 @@
 <div class="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-md">
 
     <div
-        class="bg-[#007586]/90 backdrop-blur-md shadow-2xl rounded-3xl px-4 py-3 flex items-center justify-between text-white">
+        class="bg-white border backdrop-blur-md shadow-2xl rounded-3xl px-4 py-3 flex items-center justify-between text-black">
 
         <a href="{% url 'index' %}" class="flex flex-col items-center gap-1 text-xs font-medium">
 
